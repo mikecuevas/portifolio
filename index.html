@@ -21,6 +21,18 @@
                 <h1>Web & Mobile Developer</h1>
                 <p>Mike Cuevas</p>
             </div>
+            <input
+            id="close-menu"
+            class="close-menu"
+            type="checkbox"
+            aria-label="close-menu"
+            role="button"
+          />
+          <label
+            class="close-menu-label"
+            for="close-menu"
+            title="close menu"
+          ></label>
             <div class="barra">
                 <div class="menu-centro">
                   <div class="barra-conteiner centralizador">
@@ -33,6 +45,7 @@
                       <ul onclick="getElementById('close-menu').checked=false;">
                         <li><a href="#home">Início</a></li>
                         <li><a href="#sobre-mim">Sobre mim</a></li>
+                        <li><a href="#experiencia">Experiência</a></li>
                         <li><a href="#projetos">Projetos</a></li>
                         <li><a href="#habilidades">Habilidades</a></li>
                       </ul>
@@ -41,37 +54,203 @@
                 </div>
         </header>
         <section id="sobre-mim">
-            <div class="centralizador">
-              <div class="ajustador-2">
-                <div class="avatar">
-                  <img
-                    class="desenho-bg"
-                    src="img/SP-Studio.png"
-                    alt="avatar"
-                  />
+          <div class="centralizador">
+            <div class="ajustador-2">
+              <div class="avatar">
+                <img
+                  class="desenho-bg"
+                  src="img/avatar.png"
+                  alt="avatar"
+                />
+              </div>
+              <div class="sobre-mim">
+                <h2>Sobre mim</h2>
+                <br />
+                <p>
+                  Meu nome é Mike e sou apaixonado por tecnologia e como ela pode mudar a vida das pessoas.
+                  Atualmente sou estudante de Engenharia de Controle e Automação na Universidade Federal de Santa Catarina.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+
+        <section class="experiencia" id="experiencia" aria-label="Experiência">
+          <h2 class="subtitulo">Experiência</h2>
+          <div>
+            <p class="experiencia-texto">Desenvolvo projetos <strong>Web</strong> e <strong>Mobile</strong> utilizando tecnologias voltadas para <strong>Front-End</strong> e <strong>Back-End</strong>.</p>
+            </br>
+            <p class="experiencia-texto">Algumas das minhas <strong>experiências profissionais</strong>:</p>
+            <div class="empresa">
+              <span class="empresa-ano">11/2021 - Atual</span>
+              <h3 class="empresa-titulo">LabTrans</h3>
+              <span class="empresa-titulo">Tecnologias Utilizadas</span>
+              <p class="empresa-texto">Sou Bolsista no Laboratório de Transporte e Logista da UFSC, participando do time de Desenvolvimento Mobile.</p>
+              <ul class="empresa-habilidades">
+                <li>React-Native</li>
+                <li>GitLab</li>
+                <li>JavaScript</li>
+                <li>Jira</li>
+              </ul>
+            </div>
+      
+            <div class="empresa">
+              <span class="empresa-ano">08/2021 - 11/2021</span>
+              <h3 class="empresa-titulo">FEESC</h3>
+              <span class="empresa-titulo">Tecnologias Utilizadas</span>
+              <p class="empresa-texto">Fiz Estágio na Fundação de Ensino e Engenharia de Santa Catarina durante alguns meses, com responsabilidades no desenvolvimento web voltado para o
+              site da Fundação.</p>
+              <ul class="empresa-habilidades">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+              </ul>
+            </div>      
+          </div>
+        </section>
+
+        <section id="projetos">
+          <div class="centralizador projetos">
+            <h2 class="project">Projetos</h2>
+            <div class="projetos-itens">
+              <div class="pro">
+                <div class="breve"><p>EM BREVE</p></div>
+              </div>
+              <div class="pro">
+                <div class="breve"><p>EM BREVE</p></div>
+              </div>
+              <div class="pro">
+                <div class="breve"><p>EM BREVE</p></div>
+              </div>
+              <div class="pro escondido">
+                <div class="breve"><p>EM BREVE</p></div>
+              </div>
+              <div class="pro escondido">
+                <div class="breve"><p>EM BREVE</p></div>
+              </div>
+              <div class="pro escondido">
+                <div class="breve"><p>EM BREVE</p></div>
+              </div>
+            </div>
+  
+            <div class="github-link">
+              <a
+                href="https://github.com/mikecuevas"
+                target="_blank"
+                >Repositórios no github</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section id="habilidades">
+          <div class="centralizador">
+            <div class="habilidades-pd">
+              <h2 class="project">Habilidades</h2>
+              <div class="skills-descricao">
+                <div class="conteiner-skills">
+                  <div class="skill-box skill1 html-skill">
+                    <img
+                      class="icones-habilidades"
+                      src="img/html.svg"
+                      alt="html-icon"
+                    />
+                  </div>
+                  <div class="skill-box skill2 css-skill">
+                    <img
+                      class="icones-habilidades"
+                      src="./img/css.svg"
+                      alt="css-icon"
+                    />
+                  </div>
+                  <div class="skill-box skill3 js-skill">
+                    <img
+                      class="icones-habilidades"
+                      src="img/js.svg"
+                      alt="js-icon"
+                    />
+                  </div>
+                  <!-- <div class="skill-box skill4"> <img class="icones-habilidades" src="/assets/img/node.svg" alt="node-icon"> </div>
+                              <div class="skill-box skill5"> <img class="icones-habilidades" src="/assets/img/php.svg" alt="php-icon"> </div>
+                              <div class="skill-box skill6"> <img class="icones-habilidades" src="/assets/img/java.svg" alt="java-icon"> </div>
+                              
+                              <div class="skill-box skill8"> <img class="icones-habilidades" src="/assets/img/sql.svg" alt="sql-icon"> </div> -->
+                  <div class="skill-box skill7">
+                    <img
+                      class="icones-habilidades"
+                      src="img/react.svg"
+                      alt="react-icon"
+                    />
+                  </div>
+                  <div class="skill-box skill13 sass-skill">
+                    <img
+                      class="icones-habilidades"
+                      src="img/php.svg"
+                      alt="php-icon"
+                    />
+                  </div>
+                  <div class="skill-box skill9 git-skill">
+                    <img
+                      class="icones-habilidades"
+                      src="img/git.svg"
+                      alt="git-icon"
+                    />
+                  </div>
+                  <div class="skill-box skill10 github-skill">
+                    <img
+                      class="icones-habilidades"
+                      src="img/github.svg"
+                      alt="github-icon"
+                    />
+                  </div>
+                  <!--  <div class="skill-box skill11"> <img class="icones-habilidades" src="/assets/img/bootstrap.svg" alt="bootstrap-icon"> </div> -->
+                  <div class="skill-box skill12"> 
+                    <img 
+                      class="icones-habilidades" 
+                      src="img/typescript.svg" alt="typescript-icon"> </div> 
                 </div>
-                <div class="sobre-mim">
-                  <h2>Sobre mim</h2>
-                  <br />
-                  <p>
-                    Meu nome é Matheus Vieira e sou um apaixonado por tecnologia.
-                    Meu primeiro contato com programação foi em 2015, quando ainda
-                    estava no ensino médio. Apesar de ter gostado da área, só
-                    comecei a dar o devido foco em 2021, quando um amigo me
-                    apresentou o desenvolvimento web.
-                  </p>
-                  <br />
-                  <p>
-                    Hoje já entendo tecnologias voltadas
-                    <!-- tanto -->
-                    para o Front-end<!-- quanto para o Back-end -->. Também gosto de
-                    “brincar” com design no figma, criando interfaces para projetos
-                    pessoais e de amigos.
+                <div class="conteiner-descricao">
+                  <p class="texto-descricao">
+                    Passe o mouse por cima de alguma habilidade para ler a
+                    descrição
                   </p>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="footer-conteiner">
+            <div class="contato-creditos">
+              E-mail para contato: mikefabiosauercuevas@gmail.com <br />
+              <p>
+                Copyright &copy; 2022, Mike - Todos os direitos reservados <br />
+              </p>
+            </div>
+            <div class="icons">
+              <div class="links links1">
+                <a href="https://github.com/mikecuevas" target="_blank">
+                    <img
+                    />
+                </a>
+              </div>
+              <div class="links links2">
+                <a
+                  href="https://www.linkedin.com/in/mike-cuevas"
+                  target="_blank"
+                >
+                <img
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </footer>
     </div>
 </body>
+<script src="./script.js"></script>
+<script src="./habilidades.js"></script>
 </html>

@@ -1,3 +1,5 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+
 
 /* Background image */
 * {
@@ -64,133 +66,535 @@ color: rgb(0, 0, 0);
 
 
 /* Sobre mim*/
-
 #sobre-mim {
-    width: 100%;
-    background-color: #000000;
+  width: 100%;
+  background-color:  #585858;
 }
 
 .ajustador-2 {
-    padding: 144px 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 67px;
-    max-width: 1064px;
-    margin: 0 auto;
+  padding: 144px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 67px;
+  max-width: 1064px;
+  margin: 0 auto;
 }
 
 h2 {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 45px;
-    color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 45px;
+  color: white;
 }
 
 .circulo {
-    position: absolute;
+  position: absolute;
 }
 
 .avatar {
-    width: 323px;
-    height: 368px;
-    position: relative;
-    cursor: pointer;
-    transition: ease 1s;
+  width: 323px;
+  height: 368px;
+  position: relative;
+  cursor: pointer;
+  transition: ease 1s;
 }
 
 .avatar:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 @keyframes html {
-    0% {
-        bottom: 0;
-        left: 250px;
-    }
-    100% {
-        bottom: 0;
-        left: 50px;
-    }
+  0% {
+      bottom: 0;
+      left: 250px;
+  }
+  100% {
+      bottom: 0;
+      left: 50px;
+  }
 }
 
 @keyframes css {
-    0% {
-        bottom: 0;
-        left: 50px;
-    }
-    100% {
-        bottom: 0;
-        left: 250px;
-    }
+  0% {
+      bottom: 0;
+      left: 50px;
+  }
+  100% {
+      bottom: 0;
+      left: 250px;
+  }
 }
 
 .html {
-    bottom: 0;
-    left: 0;
-    animation: html 3s infinite linear alternate-reverse ;
+  bottom: 0;
+  left: 0;
+  animation: html 3s infinite linear alternate-reverse ;
 }
 
 .js {
-    bottom: 0;
-    left: 150px;
+  bottom: 0;
+  left: 150px;
 }
 
 .css {
-    bottom: 0;
-    left: 300px;
-    animation: css 3s infinite linear alternate-reverse;
+  bottom: 0;
+  left: 300px;
+  animation: css 3s infinite linear alternate-reverse;
 }
 
 .sobre-mim{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .sobre-mim p {
-    text-indent: 30px;
-    font-size: 20px;
-    max-width: 609.25px;
-    color: white;
+  text-indent: 30px;
+  font-size: 20px;
+  max-width: 609.25px;
+  color: white;
 }
 
 @media (max-width:1200px) {
-    .ajustador-2 {
-        justify-content: center;
-        text-align: center;
-    }
+  .ajustador-2 {
+      justify-content: center;
+      text-align: center;
+  }
 
-    .avatar {
-        margin-right: 60px;
-    }
+  .avatar {
+      margin-right: 60px;
+  }
 
-    h2 {
-        font-size: 30px;
-    }
+  h2 {
+      font-size: 30px;
+  }
 
-    .ajustador-2 p {
-        font-size: 15px;
-    }
-    .sobre-mim p {
-        text-indent: 0;
-    }
+  .ajustador-2 p {
+      font-size: 15px;
+  }
+  .sobre-mim p {
+      text-indent: 0;
+  }
 }
 
 @media(max-width:950px){
 
-    .circulo {
-        display: none;
-    }
-    .ajustador-2 {
-        max-width: 350px;
-        padding: 70px 30px;
-    }
+  .circulo {
+      display: none;
+  }
+  .ajustador-2 {
+      max-width: 350px;
+      padding: 70px 30px;
+  }
 
-    .avatar {
-        margin-right: 0;
-    }
+  .avatar {
+      margin-right: 0;
+  }
 
 }
-/* Sobre mim fim*/
+  
+/*PROJETOS*/
+
+#projetos {
+  background-color: #3b3b3b;
+}
+
+.projetos {
+  padding-top: 93px;
+}
+
+.projetos h2, .projetos a {
+  text-align: center;
+}
+
+.projetos h2 {
+  padding-bottom: 70px;
+}
+
+button {
+  padding: 10px 100px;
+  border-radius: 25px;
+  cursor: pointer;
+  color: white;
+  background-color: #000000;
+  border: none;
+  transition: ease-in-out 0.3s;
+}
+
+button:hover {
+  background-color: #3b3b3b;
+}
+
+.github-link {
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 93px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.projetos a {
+  display: inline;
+}
+
+.pro {
+  background-color: #C4C4C4;
+  height: 195px;
+  width: 310px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: ease-in-out 0.3s;
+}
+
+.pro div p {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 20px;
+  color: #C4C4C4;
+}
+
+.pro:hover {
+  letter-spacing: 5px;
+}
+
+.pro div {
+  background-color: #000000;
+  width: 1000px;
+  text-align: center;
+  padding: 5% 0;
+  transform: rotate(-50deg);
+}
+
+.escondido {
+  opacity: 0;
+  display: none;
+  transition: 1000ms;
+}
+
+.projetos-itens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 29.5px;
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width:1200px) {
+.projetos{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#projetos {
+    display: flex;
+    justify-content: center;
+}
+
+.projetos-itens {
+    flex-direction: column;
+}
+
+}
+@media (max-width:950px) {
+  .pro {
+      max-width: 300px;
+  }
+
+}
+
+/* PROJETOS fim*/
+
+/*HABILIDADES */
+
+#habilidades {
+  background-color: #000000;
+}
+
+.habilidades-pd {
+  padding-top: 93px;
+}
+
+.habilidades-pd h2 { 
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.skills-descricao {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap:50px;
+  padding-bottom: 70px;
+}
+
+.conteiner-skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 37px;
+  max-width: 55%;
+}
+
+.skill-box {
+  height: 106px;
+  width: 106px;
+  background-color: #C4C4C4;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: ease 0.3s;
+}
+
+.skill-box:hover {
+  background-color: white;
+  transform: scale(1.05);
+}
+
+.conteiner-descricao {
+  color: white;
+  font-family: 'Quando', serif;
+  font-size: 20px;
+  max-width: 40%;
+}
+
+@media (max-width:1200px) {
+
+  .conteiner-descricao {
+      height: 260px;
+  }
+
+  #habilidades {
+      display: flex;
+      justify-content: center;
+  }
+
+  .skills-descricao {
+      display: flex;
+      flex-direction: column-reverse;
+      /* width: 535px; */
+      margin: 0 auto;
+      gap:50px;
+      padding-bottom: 70px;
+      align-items: center;
+  }
+
+  .skills-descricao p {
+      text-align: center;
+  }
+
+}
+@media (max-width:950px) {
+  .conteiner-skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 37px;
+      max-width: 300px;
+  }
+
+  .conteiner-descricao {
+      max-width: 300px;
+  }
+
+}
+
+.skill-box .icones-habilidades {
+  transition: ease-in-out 0.3s;
+}
+
+.skill-box:hover .icones-habilidades {
+  opacity: 0;
+}
+
+.skill1{
+  background-image: url(./img/html2.svg);
+}
+
+.skill2 {
+  background-image: url(./img/css2.svg);
+}
+
+.skill3 {
+  background-image: url(./img/js2.svg);
+}
+
+.skill4 {
+  background-image: url(./img/node2.svg);
+}
+
+.skill5 {
+  background-image: url(./img/php2.svg);
+}
+
+.skill6 {
+  background-image: url(./img/java2.svg);
+}
+
+.skill7 {
+  background-image: url(./img/react2.svg);
+}
+
+.skill8 {
+  background-image: url(./img/styled\ 2.svg);
+}
+
+.skill9 {
+  background-image: url(./img/git2.svg);
+}
+
+
+.skill10 {
+  background-image: url(./img/github2.svg);
+}
+
+.skill11 {
+  background-image: url(./img/bootstrap2.svg);
+}
+
+.skill12 {
+  background-image: url(./img/typescript2.svg);
+}
+
+.skill13 {
+  background-image: url(./img/php.svg);
+}
+
+#fundo {
+  fill: red;
+}
+
+
+
+/* HABILIDADES FIM*/
+
+
+/* EXP*/
+
+.experiencia {  
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.experiencia .subtitulo {
+  color: #000000;
+  display: flex; 
+  position: center; 
+}
+
+.experiencia-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #525252;
+}
+
+.experiencia-texto strong {
+  color: #141414;
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+  background: #f5f5f5;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.empresa::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#000000, #585858);
+  position: absolute;
+  top: 20px;
+  left: -4px;
+}
+
+.empresa-ano {
+  position: absolute;
+  top: 22px;
+  left: -100px;
+  text-align: right;
+  width: 80px;
+  color: #525252;
+  font-size: 0.875rem;
+}
+
+.empresa-titulo {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.empresa-texto {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #525252;
+}
+
+.empresa-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.empresa-habilidades li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  background: #ffffff;
+  padding: 5px 10px;
+}
+
+@media (max-width: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .experiencia .subtitulo {
+    color: #141414;
+  }
+  .experiencia-texto {
+    font-size: 1.25rem;
+  }
+  .empresa-ano {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+}
+
+@media (max-width: 400px) {
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+}
+  
+
+/* EXP FIM*/
+
+
 :root {
   --font-primary: "Baloo Da 2", serif;
   --font-secundary: "Josefin Slab", serif;
@@ -309,3 +713,75 @@ header {
   }
 }
 
+/* Footer*/
+
+.footer {
+  width: 100%;
+  background-color:#1a1818;
+}
+
+.footer-conteiner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contato-creditos {
+  color: white;
+  font-family: 'Quando', serif;
+  font-size: 15px;
+  padding: 10px 0;
+}
+
+.icons {
+  display: flex;
+  gap: 25px;
+}
+
+@media (max-width:1200px) {
+  .contato-creditos{
+      text-align: center;
+  }
+  
+  .footer-conteiner {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+  }
+ 
+}
+
+.links1, .links2 {
+  height: 52px;
+  width: 52px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.links:hover {
+  transform: rotate(-360deg);
+}
+
+.links1 {
+  background-image: url(img/github2.svg);
+}
+
+.links2 {
+  background-image: url(img/linkedinff2.svg);
+}
+
+.transparente {
+  transition: ease-in-out 0.3s;
+}
+
+.transparente:hover {
+  opacity: 0;
+}
+
+
+/* Footer Fim*/
