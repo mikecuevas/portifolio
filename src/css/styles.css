@@ -432,40 +432,40 @@ button:hover {
 }
 
 .skill5 {
-  background-image: url(./img/php2.svg);
+  background-image: url(../img/php2.svg);
 }
 
 .skill6 {
-  background-image: url(./img/java2.svg);
+  background-image: url(../img/java2.svg);
 }
 
 .skill7 {
-  background-image: url(./img/react2.svg);
+  background-image: url(../img/react2.svg);
 }
 
 .skill8 {
-  background-image: url(./img/styled\ 2.svg);
+  background-image: url(../img/styled\ 2.svg);
 }
 
 .skill9 {
-  background-image: url(./img/git2.svg);
+  background-image: url(../img/git2.svg);
 }
 
 
 .skill10 {
-  background-image: url(./img/github2.svg);
+  background-image: url(../img/github2.svg);
 }
 
 .skill11 {
-  background-image: url(./img/bootstrap2.svg);
+  background-image: url(../img/bootstrap2.svg);
 }
 
 .skill12 {
-  background-image: url(./img/typescript2.svg);
+  background-image: url(../img/typescript2.svg);
 }
 
 .skill13 {
-  background-image: url(./img/php.svg);
+  background-image: url(../img/php.svg);
 }
 
 #fundo {
@@ -691,9 +691,9 @@ header {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  background: #6a3093;
+  /*background: #6a3093;
   background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
-  background: linear-gradient(to left, #a044ff, #6a3093);
+  background: linear-gradient(to left, #a044ff, #6a3093);*/
   padding: 1rem 3rem;
   border: none;
   border-radius: 5px;
@@ -767,11 +767,11 @@ header {
 }
 
 .links1 {
-  background-image: url(img/github2.svg);
+  background-image: url(../img/github2.svg);
 }
 
 .links2 {
-  background-image: url(img/linkedinff2.svg);
+  background-image: url(../img/linkedinff2.svg);
 }
 
 .transparente {
